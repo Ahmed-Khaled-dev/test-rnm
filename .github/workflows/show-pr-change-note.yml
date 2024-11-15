@@ -1,13 +1,8 @@
 name: Show Pull Request Change Note
 
 on: 
-  pull_request:
+  pull_request_target:
       types: [opened, edited]
-
-permissions:
-  contents: read
-  pull-requests: write
-  checks: write
 
 jobs:
   show-pull-request-change-note:
