@@ -18,4 +18,4 @@ jobs:
           action-type: pr
           pull-request-number: ${{ github.event.pull_request.number }}
           pull-request-trigger-event: ${{ github.event.action }}
-          github-repository: ${{ github.repository }}
+          github-repository: ${{ github.repository }} 
