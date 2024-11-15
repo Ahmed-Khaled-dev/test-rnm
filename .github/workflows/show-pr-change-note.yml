@@ -4,6 +4,10 @@ on:
   pull_request:
       types: [opened, edited]
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   show-pull-request-change-note:
     name: Show Pull Request Change Note
