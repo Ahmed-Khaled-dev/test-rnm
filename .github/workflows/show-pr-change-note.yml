@@ -2,7 +2,7 @@ name: Show Pull Request Change Note
 
 on: 
   pull_request_target:
-      types: [opened, edited]
+      types: [opened, edited]    
 
 jobs:
   show-pull-request-change-note:
