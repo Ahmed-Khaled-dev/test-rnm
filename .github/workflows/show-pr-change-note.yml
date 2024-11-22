@@ -9,17 +9,6 @@ jobs:
     name: Show Pull Request Change Note
     runs-on: ubuntu-latest
     steps:
-      - name: Check current sources (debugging)
-        run: cat /etc/apt/sources.list || echo "sources.list not found"
-        
-      - name: Reset apt sources list
-        run: |
-          sudo tee /etc/apt/sources.list <<EOF
-          deb http://archive.ubuntu.com/ubuntu jammy main universe
-          deb http://archive.ubuntu.com/ubuntu jammy-updates main universe
-          deb http://security.ubuntu.com/ubuntu jammy-security main universe
-          EOF
-
       - name: Update apt cache
         run: sudo apt-get update
 
